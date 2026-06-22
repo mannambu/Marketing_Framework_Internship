@@ -1,0 +1,45 @@
+I am currently creating prompt commands for a marketing strategy generation system, specifically for food service and food product businesses.
+
+The system has 2 phases.
+
+### Phase 1
+
+Users will provide very general input because this system is designed for people with little or no marketing knowledge.
+
+I am struggling with:
+
+* What information should users be asked to provide?
+* What should the input fields look like?
+* What should the exact prompt structure be?
+
+The flow is:
+
+1. The user enters basic business information.
+2. The user selects a marketing framework (e.g., SWOT, STP, 4P, SOSTAC, RACE, AARRR, etc.).
+3. Based on the user's inputs and selected framework, the system generates a detailed prompt.
+4. That generated prompt is then sent to Gemini Flash 2.5 to create the final marketing strategy.
+
+### Phase 2
+
+After the prompt has been generated and sent to Gemini Flash 2.5, the AI produces the final marketing strategy.
+
+Requirements:
+
+* Each marketing framework must have exactly one predefined output format.
+* The output must be comprehensive and include all important elements of the selected framework.
+* The output must strictly follow the selected marketing framework.
+* The output must be written in Markdown format so it can be rendered directly in the application.
+* The output must include Mermaid diagrams for visualization where appropriate.
+* The output structure should remain consistent for the same framework regardless of the user's business.
+
+Please provide:
+
+1. A recommended set of user input fields for Phase 1.
+2. The optimal prompt template for converting user inputs into a framework-specific marketing strategy prompt.
+3. A universal JSON structure for collecting user inputs.
+4. Example prompt-generation templates for food service and food product businesses.
+5. Recommended Markdown output structures for different marketing frameworks (such as SWOT, STP, 4P, SOSTAC, RACE, and AARRR).
+6. Mermaid diagram recommendations that align with each framework.
+7. Best practices for ensuring the generated strategy is both beginner-friendly and professionally useful.
+
+The goal is to allow non-marketers to enter simple information while still generating high-quality marketing strategies that are framework-compliant, structured, and actionable.
